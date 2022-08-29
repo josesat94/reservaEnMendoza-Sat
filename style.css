@@ -1,0 +1,989 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    grid-template-rows: 13vh 22vh 5vh 45vh 15vh;
+    grid-template-areas:
+        "navbar navbar navbar navbar navbar"
+        "banner banner banner banner banner"
+        "titulo titulo titulo titulo titulo"
+        "alojamiento excursiones traslados comerBeber rental"
+        "registra redesEinfo redesEinfo redesEinfo chatea "
+    ;
+}
+
+/* NAVBAR---------------------------------- */
+.navbar {
+    grid-area: navbar;
+    background-color: rgb(34, 36, 36);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.logoIndex {
+    color: aliceblue;
+    text-decoration: none;
+    width: 15%;
+}
+
+.navbar img {
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 2px;
+}
+
+.navList{
+    color: aliceblue;
+    text-decoration: none;
+    width: 12%;
+}
+
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100vw;
+}
+
+/* BOTONES------------------------ */
+.Ulnavbar {
+    font-weight: 500px;
+    font-size: 16px;
+    color: rgb(226, 225, 225);
+    text-decoration: none;
+}
+
+.buttonIngresa:hover {
+    background-color: rgba(109, 129, 155, 0.8);
+}
+
+.buttonChatea:hover {
+    background-color: rgba(20, 41, 67, 0.8)
+}
+
+.buttonRegistra:hover {
+    background-color: rgba(20, 41, 67, 0.8)
+}
+
+button {
+    padding: 4px 15px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.inicio:hover {
+    background-color: rgba(109, 129, 155, 0.8);
+}
+
+.nosotros:hover {
+    background-color: rgba(109, 129, 155, 0.8);
+}
+
+.politica:hover {
+    background-color: rgba(109, 129, 155, 0.8);
+}
+
+.contacto:hover {
+    background-color: rgba(109, 129, 155, 0.8);
+}
+
+.logoAlojamiento:hover {
+    background-color: rgba(109, 129, 155, 0.8);
+}
+
+.logoExcursiones:hover {
+    background-color: rgba(109, 129, 155, 0.8);
+}
+
+.logoTraslados:hover {
+    background-color: rgba(109, 129, 155, 0.8);
+}
+
+.logoComerbeber:hover {
+    background-color: rgba(109, 129, 155, 0.8);
+}
+
+.logoRental:hover {
+    background-color: rgba(109, 129, 155, 0.8);
+}
+
+.buttonRegistra {
+    background-color: rgb(34, 36, 36);
+    color: rgba(0, 136, 169, 1);
+}
+
+.buttonChatea {
+    background-color: rgb(34, 36, 36);
+    color: rgba(0, 136, 169, 1);
+}
+
+.logoFb:hover {
+    background-color: rgba(109, 129, 155, 0.8);
+}
+
+.logoIg:hover {
+    background-color: rgba(109, 129, 155, 0.8);
+}
+
+.logoTw:hover {
+    background-color: rgba(109, 129, 155, 0.8);
+}
+
+/* --------------------------------------------------- */
+/* PAGINA INDEX/INICIO */
+.banner {
+    grid-area: banner;
+    background-color: aqua;
+    background-image: url(./img/banner.jpeg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-top: solid 1px rgba(0, 136, 169, 1);
+    border-bottom: solid 1px rgba(0, 136, 169, 1);
+}
+
+.bannerContenido {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    color: rgb(237, 237, 237);
+    height: auto;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+
+.titulo {
+    grid-area: titulo;
+    background-color: rgb(34, 36, 36);
+}
+
+.titulo h3 {
+    grid-area: titulo;
+    text-align: center;
+    margin-top: 7px;
+    color: rgb(203, 213, 221);
+    font-style: italic;
+    font-weight: 200;
+}
+
+.alojamiento {
+    grid-area: alojamiento;
+    background-color: coral;
+    background-image:
+        linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+        url(./img/imgAlojamiento.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: solid 1px rgba(0, 136, 169, 1);
+    border-bottom: solid 1px rgba(0, 136, 169, 1);
+    border-right: solid 1px rgba(0, 136, 169, 1);
+    position: relative;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.logoAlojamiento {
+    width: 100%;
+}
+
+.linkAlojamiento {
+    display: grid;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.logoExcursiones {
+    width: 100%;
+}
+
+.logoTraslados {
+    width: 100%;
+}
+
+.logoComerbeber {
+    width: 100%;
+}
+
+.logoRental {
+    width: 100%;
+}
+
+.excursionesIndex {
+    grid-area: excursiones;
+    background-image:
+        linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+        url(./img/imgExcirsiones.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 1px rgba(0, 136, 169, 1);
+    position: relative;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+}
+
+.traslados {
+    grid-area: traslados;
+    background-color: darkcyan;
+    background-color: coral;
+    background-image:
+        linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+        url(./img/imgTraslados.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 1px rgba(0, 136, 169, 1);
+    position: relative;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.comerBeber {
+    grid-area: comerBeber;
+    background-color: blueviolet;
+    background-color: coral;
+    background-image:
+        linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+        url(./img/imgComerybeber.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 1px rgba(0, 136, 169, 1);
+    position: relative;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.rental {
+    grid-area: rental;
+    background-color: bisque;
+    background-image:
+        linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+        url(./img/imgRental.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: solid 1px rgba(0, 136, 169, 1);
+    border-bottom: solid 1px rgba(0, 136, 169, 1);
+    border-left: solid 1px rgba(0, 136, 169, 1);
+    position: relative;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.registra {
+    grid-area: registra;
+    background-color: rgba(0, 136, 169, 1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.redesEinfo {
+    grid-area: redesEinfo;
+    background-color: rgba(0, 136, 169, 1);
+}
+
+.chatea {
+    grid-area: chatea;
+    background-color: rgba(0, 136, 169, 1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.animate__flash {
+    animation-duration: 10ms;
+    animation-iteration-count: infinite;
+  }
+
+/*------------------------------------------------------------------  */
+/* PAGINA ALOJAMIENTO------------------------------------------------ */
+.gridContainerAlojamiento {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    grid-template-rows: 13vh 22vh 5vh 80vh 15vh;
+    grid-template-areas:
+        "navbar navbar navbar navbar navbar"
+        "banner banner banner banner banner"
+        "titulo titulo titulo titulo titulo"
+        "mainAlojamiento mainAlojamiento mainAlojamiento mainAlojamiento mainAlojamiento"
+        "registra redesEinfo redesEinfo redesEinfo chatea";
+}
+
+.gridContainerAlojamiento .banner {
+    grid-area: banner;
+    background-color: aqua;
+    background-image:
+        linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+        url(./img/banneralojamiento0.webp);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-top: solid px rgba(0, 136, 169, 1);
+    border-bottom: solid 1px rgba(0, 136, 169, 1);
+}
+
+.bannerContenido {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    color: rgb(237, 237, 237);
+    height: auto;
+    margin-top: 50px;
+}
+
+.mainAlojamiento {
+    grid-area: mainAlojamiento;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(34, 36, 36);
+    background-image: linear-gradient(to left, rgb(50, 50, 89), rgb(34, 36, 36));
+}
+
+.containerAlojamiento {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.formAlojamiento {
+    margin: 0 auto;
+    padding: 30px 30px 30px 30px;
+    width: 550px;
+    height: 450px;
+    background-image: linear-gradient(to left, rgb(50, 50, 89), rgb(130, 130, 130));
+    border-radius: 5px;
+    align-items: center;
+    align-content: center;
+    border: solid 2px rgba(0, 136, 169, 1);
+    text-align: center;
+}
+
+.formTipoAlojamiento {
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.h3Alojamiento {
+    padding-bottom: 15px;
+}
+
+
+.buttonAlojamiento {
+    margin: 5px;
+    padding: 4px 15px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+input:focus{
+    border-radius: 10%;
+    background-color: rgb(255, 230, 1);
+    color: blueviolet;
+    transition: 0.3s;
+}
+
+.buttonAlojamiento:hover {
+    background-color: rgba(109, 129, 155, 0.8);
+}
+
+button:hover{
+    color: cornflowerblue;
+    font-weight: bold;
+    transition: 0.3s;
+    transform: scale(2);
+}
+
+.animate__pulse{
+    animation-duration: 10ms;
+    animation-iteration-count: infinite;
+  }
+
+  .animate__flipInX{
+    animation-duration: 10ms;
+    animation-iteration-count: infinite;
+  }
+
+
+/* FOOTER -------------------------------------------------------------*/
+
+.redesEinfo {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+.logosFooter {
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.encontranos {
+    padding-bottom: 20px;
+}
+
+.logoFb {
+    width: 20px;
+}
+
+.logoIg {
+    width: 20px;
+}
+
+.logoTw {
+    width: 20px;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* MEDIA QUERYS---------------------------------------------------------- */
+/* MEDIA QUERY: Dispositivos pantallas pequeñas 480px---------------------*/
+@media (max-width:480px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+        grid-template-rows: 17vh 22vh 5vh 13vh 13vh 13vh 13vh 13vh 6vh 6vh 6vh;
+        grid-template-areas:
+            "navbar navbar navbar navbar navbar"
+            "banner banner banner banner banner"
+            "titulo titulo titulo titulo titulo"
+            "alojamiento alojamiento alojamiento alojamiento alojamiento"
+            "excursiones excursiones excursiones excursiones excursiones"
+            "traslados traslados traslados traslados traslados"
+            "comerBeber comerBeber comerBeber comerBeber comerBeber"
+            "rental rental rental rental rental"
+            "registra registra registra registra registra"
+            "redesEinfo redesEinfo redesEinfo redesEinfo redesEinfo"
+            "chatea chatea chatea chatea chatea";
+        height: 122vh;
+        width: 100vw;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logoIndex {
+        color: aliceblue;
+        text-decoration: none;
+        width: 15%;
+    }
+
+    .navbar img {
+        width: 100%;
+        padding-top: 8px;
+        padding-bottom: 2px;
+    }
+
+    .registra {
+        grid-area: registra;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+        font-size: 70%;
+    }
+
+    .redesEinfo {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chatea {
+        grid-area: chatea;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        font-size: 70%;
+    }
+
+    .encontranos {
+        padding-bottom: 5px;
+    }
+
+    h1 {
+        font-size: 200%;
+    }
+
+    h2 {
+        font-size: 130%;
+    }
+
+    h3 {
+        font-size: 80%;
+    }
+
+    .navList{
+        font-size: 90%;
+    }
+
+    navbar .navbar ul .ulNavbar li a button .buttonIngresa{
+        font-size: 90%;
+    }
+
+    .alojamiento {
+        grid-area: alojamiento;
+        background-image:
+            linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+            url(./img/banneralojamiento0.webp);
+    }
+
+    .excursionesIndex {
+        grid-area: excursiones;
+        background-image:
+            linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+            url(./img/bannerexcursiones.webp);
+    }
+
+    .traslados {
+        grid-area: traslados;
+        background-image:
+            linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+            url(./img/trasladosbanner0.webp);
+    }
+
+    .comerBeber {
+        grid-area: comerBeber;
+        background-image:
+            linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+            url(./img/comerybeber2.png);
+    }
+
+    .gridContainerAlojamiento {
+        display: grid;
+        grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+        grid-template-rows: 17vh 22vh 5vh 95vh 6vh 6vh 6vh;
+        grid-template-areas:
+            "navbar navbar navbar navbar navbar"
+            "banner banner banner banner banner"
+            "titulo titulo titulo titulo titulo"
+            "mainAlojamiento mainAlojamiento mainAlojamiento mainAlojamiento mainAlojamiento"
+            "registra registra registra registra registra"
+            "redesEinfo redesEinfo redesEinfo redesEinfo redesEinfo"
+            "chatea chatea chatea chatea chatea";
+        height: 153vh;
+        width: 100vw;
+    }
+
+    .mainAlojamiento{
+        height: 95vh;
+    }
+
+    .logoAlojamiento {
+        width: 20%;
+    }
+
+
+    .linkAlojamiento {
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+    }
+   
+    .formAlojamiento {
+        padding: 21px 30px 30px 30px;
+        height: 90vh;
+        width: 70vw;
+    }
+    
+    .formTipoAlojamiento {
+        display: flex;
+        align-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navList{
+        font-size: 90%;
+    }
+
+    navbar .navbar ul .ulNavbar li a button .buttonIngresa{
+        font-size: 90%;
+    }
+
+    .logoExcursiones {
+        width: 20%;
+    }
+
+    .linkExcursiones {
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    .logoTraslados {
+        width: 20%;
+    }
+
+    .linkTraslados {
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    .logoComerbeber {
+        width: 20%;
+    }
+
+    .linkComerbeber {
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    .rental {
+        grid-area: rental;
+        background-image:
+            linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+            url(./img/rentalBannerResponsive.jpeg);
+    }
+
+    .logoRental {
+        width: 20%;
+    }
+
+    .linkRental {
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+    }
+
+}
+
+/* MEDIA QUERY: Dispositivos pantallas medianas 600px---------------------*/
+@media (max-width:600px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+        grid-template-rows: 17vh 22vh 5vh 13vh 13vh 13vh 13vh 13vh 6vh 6vh 6vh;
+        grid-template-areas:
+            "navbar navbar navbar navbar navbar"
+            "banner banner banner banner banner"
+            "titulo titulo titulo titulo titulo"
+            "alojamiento alojamiento alojamiento alojamiento alojamiento"
+            "excursiones excursiones excursiones excursiones excursiones"
+            "traslados traslados traslados traslados traslados"
+            "comerBeber comerBeber comerBeber comerBeber comerBeber"
+            "rental rental rental rental rental"
+            "registra registra registra registra registra"
+            "redesEinfo redesEinfo redesEinfo redesEinfo redesEinfo"
+            "chatea chatea chatea chatea chatea";
+        height: 122vh;
+        width: 100vw;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logoIndex {
+        color: aliceblue;
+        text-decoration: none;
+        width: 15%;
+    }
+
+    .navbar img {
+        width: 100%;
+        padding-top: 8px;
+        padding-bottom: 2px;
+    }
+
+    .registra {
+        grid-area: registra;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+        font-size: 70%;
+    }
+
+    .redesEinfo {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chatea {
+        grid-area: chatea;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        font-size: 70%;
+    }
+
+    .encontranos {
+        padding-bottom: 5px;
+    }
+
+    h1 {
+        font-size: 200%;
+    }
+
+    h2 {
+        font-size: 130%;
+    }
+
+    h3 {
+        font-size: 80%;
+    }
+
+    .navList{
+        font-size: 90%;
+    }
+
+    navbar .navbar ul .ulNavbar li a button .buttonIngresa{
+        font-size: 90%;
+    }
+
+    .alojamiento {
+        grid-area: alojamiento;
+        background-image:
+            linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+            url(./img/banneralojamiento0.webp);
+    }
+
+    .excursionesIndex {
+        grid-area: excursiones;
+        background-image:
+            linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+            url(./img/bannerexcursiones.webp);
+    }
+
+    .traslados {
+        grid-area: traslados;
+        background-image:
+            linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+            url(./img/trasladosbanner0.webp);
+    }
+
+    .comerBeber {
+        grid-area: comerBeber;
+        background-image:
+            linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+            url(./img/comerybeber2.png);
+    }
+
+    .gridContainerAlojamiento {
+        display: grid;
+        grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+        grid-template-rows: 17vh 22vh 5vh 95vh 6vh 6vh 6vh;
+        grid-template-areas:
+            "navbar navbar navbar navbar navbar"
+            "banner banner banner banner banner"
+            "titulo titulo titulo titulo titulo"
+            "mainAlojamiento mainAlojamiento mainAlojamiento mainAlojamiento mainAlojamiento"
+            "registra registra registra registra registra"
+            "redesEinfo redesEinfo redesEinfo redesEinfo redesEinfo"
+            "chatea chatea chatea chatea chatea";
+        height: 153vh;
+        width: 100vw;
+    }
+
+    .mainAlojamiento{
+        height: 95vh;
+    }
+
+    .logoAlojamiento {
+        width: 20%;
+    }
+
+
+    .linkAlojamiento {
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+    }
+   
+    .formAlojamiento {
+        padding: 21px 30px 30px 30px;
+        height: 90vh;
+        width: 70vw;
+    }
+    
+    .formTipoAlojamiento {
+        display: flex;
+        align-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navList{
+        font-size: 90%;
+    }
+
+    navbar .navbar ul .ulNavbar li a button .buttonIngresa{
+        font-size: 90%;
+    }
+
+    .logoExcursiones {
+        width: 20%;
+    }
+
+    .linkExcursiones {
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    .logoTraslados {
+        width: 20%;
+    }
+
+    .linkTraslados {
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    .logoComerbeber {
+        width: 20%;
+    }
+
+    .linkComerbeber {
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    .rental {
+        grid-area: rental;
+        background-image:
+            linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+            url(./img/rentalBannerResponsive.jpeg);
+    }
+
+    .logoRental {
+        width: 20%;
+    }
+
+    .linkRental {
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+    }
+
+
+}
+
+
