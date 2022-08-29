@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./img/FAVICON.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Alojamiento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <div class="gridContainerAlojamiento">
+        <navbar class="navbar">
+            <a class="logoIndex" href="./index.html"><img class="logo" src="./img/LOGO.png" alt="logo"></a>
+            <ul class="ulNavbar">
+                <li><a class="navList" href="./index.html">INICIO</a></li>
+                <li><a class="navList" href="#">NOSOTROS</a></li>
+                <li><a class="navList" href="#">POLÍTICA</a></li>
+                <li><a class="navList" href="#">CONTACTO</a></li>
+                <li><a href="#"><button class="buttonIngresa">INGRESÁ</button></a></li>
+            </ul>
+        </navbar>
+        <div class="banner">
+            <div class="bannerContenido">
+                <h1 class="animate__animated animate__flipInX">ALOJAMIENTO</h1>
+                <h2 class="animate__animated animate__pulse">Elegí tu experiencia</h2>
+            </div>
+        </div>
+        <div class="titulo">
+            <h3>¿Cómo elegís alojarte en tu próximo viaje?</h3>
+        </div>
+        <div class="mainAlojamiento">
+            <div class="containerAlojamiento">
+                <form class="formAlojamiento" action="#" method="get">
+                    <h3 class="h3Alojamiento">¿Qué tipo de alojamiento buscás?</h3>
+                    <div class="formTipoAlojamiento">
+                        <input type="radio" name="tipo_alojamiento" value="Departamento" required>
+                        <p>Departamento</p>
+                        <input type="radio" name="tipo_alojamiento" value="Bed&Breakfast" required>
+                        <p>Bed&Breakfast</p>
+                        <input type="radio" name="tipo_alojamiento" value="Hotel" required>
+                        <p>Hotel</p>
+                    </div>
+                    <br><br>
+                    <h3 class="h3Alojamiento">Huéspedes</h3>
+                    <div class="formTipoAlojamiento">
+                        <label for="Adultos">Adultos:</label>
+                        <input type="number" name="Adultos" placeholder="¿Cuántos se alojan?" required>
+                        <label for="Niños">Niños:</label>
+                        <input type="number" name="Niños" placeholder="¿Cuántos se alojan?" required>
+                    </div>
+                    <br><br>
+                    <h3 class="h3Alojamiento">¿En qué fechas te alojás?</h3>
+                    <div class="formTipoAlojamiento">
+                        <label for="Desde">Desde:</label>
+                        <input type="date" name="desde_Día" placeholder="¿Desde cuándo?" required>
+                        <label for="Día">Hasta:</label>
+                        <input type="date" name="desde_Mes" placeholder="¿Hasta cuándo?" required>
+                    </div>
+                    <br><br><br>
+                    <div class="formTipoAlojamiento">
+                        <input type="checkbox" name="acepta" value="si" required>
+                        <p class="pTerminos">Acepto términos y condiciones</p>
+                    </div>
+                    <br>
+                    <div class="formTipoAlojamiento">
+                        <input class="buttonAlojamiento" type="submit" value="CALCULAR">
+                        <br>
+                        <input class="buttonAlojamiento" type="reset" value="Restablecer">
+                    </div>
+                    <br><br>
+                </form>
+            </div>
+        </div>
+        <div class="registra">
+            <button class="buttonRegistra">Registrá tu negocio</button>
+        </div>
+        <div class="redesEinfo">
+            <h6 class="encontranos">Encontranos acá también</h6>
+            <div class="logosFooter">
+                <a href="https://facebook.com" target="_blank">
+                    <img class="logoFb" src="./Img/LOGO FB.png" alt="logo_facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img class="logoIg" src="./Img/LOGO IG.png" alt="logo_instagram">
+                </a>
+                <a href="http://twitter.com/" target="_blank">
+                    <img class="logoTw" src="./Img/LOGO. TW.png" alt="logo_twitter">
+                </a>
+            </div>
+        </div>
+        <div class="chatea">
+            <button class="buttonChatea">Chateá con nosotros</button>
+        </div>
+    </div>
+</body>
+
+</html>
